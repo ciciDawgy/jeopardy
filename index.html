@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <title>Jeopardy</title>
 </head>
 <body>
     <div class="container">
       <div class="grid-container">
-            <div class="grid-item head">Fables</div>
+            <div class="grid-item head" id="id01">Fables</div>
             <div class="grid-item head">Dogs</div>
             <div class="grid-item head">Cats</div>  
             <div class="grid-item head">Supers</div>
             <div class="grid-item head">5</div>
             <div class="grid-item head">6</div>  
-            <div class="grid-item">$200</div>
+            <div class="grid-item" id="id02">$200</div>
             <div class="grid-item">$200</div>
             <div class="grid-item">$200</div>  
             <div class="grid-item">$200</div>
@@ -55,16 +56,51 @@
     <div id="id01" class="modal">
 
       <!-- Modal Content -->
-      <form class="modal-content animate" action="/action_page.php">
+      <div class="modal-content animate">
+        <i class="fa-solid fa-x"></i>
+        <p>Who Is The President?</p>
         <input type="radio" id="html" name="fav_language" value="HTML">
         <label for="html">HTML</label><br>
-        <input type="radio" id="css" name="fav_language" value="CSS">
+        <input type="radio" id="css" name="fav_language" value="CSS" class="correct">
         <label for="css">CSS</label><br>
         <input type="radio" id="javascript" name="fav_language" value="JavaScript">
         <label for="javascript">JavaScript</label>   
-     </form>
-    </div>
       </div>
+    </div>
+
+       <!-- The Modal -->
+       <div id="id02" class="modal">
+
+        <!-- Modal Content -->
+        <div class="modal-content animate">
+          <p>Who Is The Vice President?</p>
+          <input type="radio" id="html" name="fav_language" value="Dog">
+          <label for="html">DogL</label><br>
+          <input type="radio" id="css" name="fav_language" value="CSS" class="correct">
+          <label for="css">CSS</label><br>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <label for="javascript">JavaScript</label>   
+          <i class="fa-solid fa-x"></i>
+        </div>
+      </div>
+      </div>
+
+        <!-- The Modal -->
+        <div id="hans" class="modal">
+
+          <!-- Modal Content -->
+          <div class="modal-content animate">
+            <p>What is your favorite color</p>
+            <input type="radio" id="html" name="fav_language" value="Dog">
+            <label for="html">DogL</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS" class="correct">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>   
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
+        </div>
 
 
   <script src="script.js"></script>
